@@ -4,6 +4,10 @@
   font-family: "Kumbh Sans", sans-serif;
 }
 
+body {
+  overflow: hidden;
+}
+
 .container {
   background-color: hsl(185, 75%, 39%);
   display: flex;
