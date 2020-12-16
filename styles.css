@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  background-color: hsl(185, 75%, 39%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.profileCard {
+  width: 320px;
+  height: 375px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  filter: drop-shadow(10px 10px 7rem hsl(227, 10%, 46%));
+}
+
+.top-circle {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  z-index: 1;
+}
+
+.bottom-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+}
+
+.profileCard__top {
+  flex: 0.4;
+}
+
+.profileCard__top > img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 15px 15px 0 0;
+}
+
+.profileCard__middle {
+  position: relative;
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileImage {
+  position: absolute;
+  top: -55px;
+  left: 35%;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+.profileImage > img {
+  border-radius: 100%;
+  scale: 90%;
+}
+
+.info__person {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.info__person > p {
+  margin-right: 10px;
+}
+
+.info__stat {
+  color: hsl(229, 23%, 23%);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.info__age {
+  color: hsl(227, 10%, 46%);
+}
+
+.location {
+  color: hsl(227, 10%, 46%);
+  font-size: 14px;
+}
+
+.profileCard__bottom {
+  flex: 0.2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid hsl(0, 0%, 59%, 59%);
+}
+
+.info {
+  text-align: center;
+}
+
+.info__type {
+  color: hsl(227, 10%, 46%);
+  font-size: 12px;
+}
